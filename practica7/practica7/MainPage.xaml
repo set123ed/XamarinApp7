@@ -7,9 +7,10 @@
     <StackLayout Padding="0,20,0,0">
         <Label Text="Effects Demo - Focus Effect"
                FontAttributes="Bold"
-               HorizontalOptions="Center" />
+               HorizontalOptions="Center"
+               VerticalOptions="EndAndExpand"/>
         <Entry Text="Effect attached to an Entry"
-               VerticalOptions="EndAndExpand"
+               VerticalOptions="StartAndExpand"
                HorizontalOptions="CenterAndExpand">
             <Entry.Effects>
                 <local:FocusEffect />
