@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:Practice_7"
+    x:Class="Practice_7.Views.DependencyServicePage"
+    Title="Dependency">
+    <ContentPage.Content>
+        <StackLayout>
+            <!--<Button Text="{Binding TextButton}" TextColor="Black" Command="{Binding DependencyCommand}"/>
+            <Label Text="{Binding labelOrientate}" TextColor="Black" BackgroundColor="Orange" />-->
+             <Label Text="Hello, Custom Renderer!" />
+            <local:MyEntry Text="In Shared Code" />
+            <Label Text="Effects Demo - Focus Effect"
+               FontAttributes="Bold"
+               HorizontalOptions="Center" />
+        <Entry Text="Effect attached to an Entry"
+               VerticalOptions="CenterAndExpand"
+               HorizontalOptions="CenterAndExpand">
+            <Entry.Effects>
+                <local:FocusEffect />
+            </Entry.Effects>
+            <Entry.WidthRequest>
+                <OnPlatform x:TypeArguments="x:Double">
+                    <On Platform="iOS, Android"
+                        Value="220" />
+                    <On Platform="UWP"
+                        Value="250" />
+                </OnPlatform>
+            </Entry.WidthRequest>
+        </Entry>
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>
+ 
