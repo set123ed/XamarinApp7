@@ -20,7 +20,7 @@ namespace practica7.Droid
 
             if (Control != null)
             {
-                Control.SetBackgroundColor(global::Android.Graphics.Color.LightGreen);
+                Control.SetBackgroundColor(global::Android.Graphics.Color.RosyBrown);
             }
         }
     }

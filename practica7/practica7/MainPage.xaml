@@ -9,6 +9,7 @@
                FontAttributes="Bold"
                HorizontalOptions="Center"
                VerticalOptions="EndAndExpand"/>
+        
         <Entry Text="Effect attached to an Entry"
                VerticalOptions="StartAndExpand"
                HorizontalOptions="CenterAndExpand">

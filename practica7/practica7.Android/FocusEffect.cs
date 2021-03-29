@@ -11,14 +11,14 @@ namespace practica7.Droid
     
         public class FocusEffect : PlatformEffect
         {
-            Android.Graphics.Color originalBackgroundColor = new Android.Graphics.Color(20, 20, 20, 20);
+            Android.Graphics.Color originalBackgroundColor = new Android.Graphics.Color(0, 0, 0, 0);
             Android.Graphics.Color backgroundColor;
 
             protected override void OnAttached()
             {
                 try
                 {
-                    backgroundColor = Android.Graphics.Color.LightGreen;
+                    backgroundColor = Android.Graphics.Color.LightBlue;
                     Control.SetBackgroundColor(backgroundColor);
                 }
                 catch (Exception ex)
