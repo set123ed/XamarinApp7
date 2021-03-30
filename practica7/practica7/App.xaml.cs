@@ -1,28 +1,28 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Prism;
+using Prism.Unity;
+using Prism.Ioc;
+using practica7.ViewModel;
 
 namespace practica7
 {
-    public partial class App : Application
+    public partial class App : PrismApplication 
     {
-        public App()
+        public App(IPlatformInitializer platformInitializer = null) : base(platformInitializer) { }
+        
+
+        protected override async  void OnInitialized()
         {
             InitializeComponent();
-
-            MainPage = new MyTabbedPage();
+           await NavigationService.NavigateAsync("MyTabbedPage");
         }
 
-        protected override void OnStart()
+        protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
-        }
-
-        protected override void OnSleep()
-        {
-        }
-
-        protected override void OnResume()
-        {
+            containerRegistry.RegisterForNavigation<MyTabbedPage>();
+            containerRegistry.RegisterForNavigation<DependecyPage, OrientationViewModel>();
         }
     }
 }

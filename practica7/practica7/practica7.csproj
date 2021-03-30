@@ -13,5 +13,18 @@
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
     <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
+    <PackageReference Include="Prism.Unity.Forms" Version="8.0.0.1909" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\" />
+    <Folder Include="Effects\" />
+    <Folder Include="Rendered\" />
+    <Folder Include="ViewModel\" />
+    <Folder Include="Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Views\PlatformSpecificPage.xaml.cs">
+      <DependentUpon>PlatformSpecificPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
 </Project>
