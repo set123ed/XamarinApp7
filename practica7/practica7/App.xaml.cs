@@ -22,6 +22,10 @@ namespace practica7
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
             containerRegistry.RegisterForNavigation<MyTabbedPage>();
+            containerRegistry.RegisterForNavigation<DependecyPage>();
+            containerRegistry.RegisterForNavigation<EntrySamplePage>();
+            containerRegistry.RegisterForNavigation<MainPage>();
+            containerRegistry.RegisterForNavigation<PlatformSpecificPage>();
             containerRegistry.RegisterForNavigation<DependecyPage, OrientationViewModel>();
         }
     }

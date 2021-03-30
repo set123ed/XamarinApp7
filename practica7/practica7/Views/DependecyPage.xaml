@@ -9,7 +9,7 @@
                    HorizontalOptions="Center" />
             <Button Text="Get Device Orientation"
                     Command="{Binding Orientation}" />
-            <Label Text="{Binding orientate}"
+            <Label Text="{Binding LabelText}"
                    HorizontalOptions="Center" />
         </StackLayout>  
 </ContentPage>
