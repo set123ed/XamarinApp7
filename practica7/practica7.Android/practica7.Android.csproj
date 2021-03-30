@@ -63,6 +63,7 @@
     <Compile Include="FocusEffect.cs" />
     <Compile Include="EffectsDemo\Droid.cs" />
     <Compile Include="MyEntryRenderer.cs" />
+    <Compile Include="SwipeView.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />

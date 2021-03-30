@@ -1,9 +1,17 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <ContentPage
-    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"    xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    x:Class="practica7.PlatformSpecificPage">
-    <ContentPage.Content>
-        
-    </ContentPage.Content>
+    x:Class="practica7.PlatformSpecificPage"
+    Title="Elevation">
+   <StackLayout>
+        <Grid>
+            <Button Text="Button Beneath BoxView" />
+            <BoxView Color="Red" Opacity="0.2" HeightRequest="50" />
+        </Grid>        
+        <Grid Margin="0,20,0,0">
+            <Button Text="Button Above BoxView - Click Me" android:VisualElement.Elevation="10"/>
+            <BoxView Color="Red" Opacity="0.2" HeightRequest="50" />
+        </Grid>
+    </StackLayout>
 </ContentPage>
