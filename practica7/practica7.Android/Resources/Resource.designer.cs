@@ -11787,6 +11787,9 @@ namespace practica7.Droid
 			// aapt resource value: 0x7F07008F
 			public const int tooltip_frame_light = 2131165327;
 			
+			// aapt resource value: 0x7F070090
+			public const int Xamarin = 2131165328;
+			
 			static Drawable()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -13252,9 +13255,6 @@ namespace practica7.Droid
 			
 			// aapt resource value: 0x7F0C0002
 			public const int launcher_foreground = 2131492866;
-			
-			// aapt resource value: 0x7F0C0003
-			public const int Xamarin = 2131492867;
 			
 			static Mipmap()
 			{
