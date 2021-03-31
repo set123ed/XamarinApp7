@@ -20,9 +20,7 @@ namespace practica7.Droid
                  orientation == SurfaceOrientation.Rotation270;
             return isLandscape ? DeviceOrientation.Landscape : DeviceOrientation.Portrait;
         }
-        //public DeviceOrientationService()
-        //{
-        //}
+        
     }
 }
 

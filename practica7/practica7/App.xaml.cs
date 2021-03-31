@@ -11,22 +11,23 @@ namespace practica7
     public partial class App : PrismApplication 
     {
         public App(IPlatformInitializer platformInitializer = null) : base(platformInitializer) { }
-        
+
+        public Config Contants = new Config();
 
         protected override async  void OnInitialized()
         {
             InitializeComponent();
-           await NavigationService.NavigateAsync("MyTabbedPage");
+           //await NavigationService.NavigateAsync($"{Config.NavigationPage}/{Config.MyTabbedPage}");
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
-            containerRegistry.RegisterForNavigation<MyTabbedPage>();
-            containerRegistry.RegisterForNavigation<DependecyPage>();
-            containerRegistry.RegisterForNavigation<EntrySamplePage>();
-            containerRegistry.RegisterForNavigation<MainPage>();
-            containerRegistry.RegisterForNavigation<PlatformSpecificPage>();
-            containerRegistry.RegisterForNavigation<DependecyPage, OrientationViewModel>();
+            //containerRegistry.RegisterForNavigation<NavigationPage>(Config.NavigationPage);
+            //containerRegistry.RegisterForNavigation<MyTabbedPage>(Config.MyTabbedPage);
+            //containerRegistry.RegisterForNavigation<DependecyPage>(Config.DependencyPage);
+            //containerRegistry.RegisterForNavigation<EntrySamplePage>(Config.EntrySamplePage);
+            //containerRegistry.RegisterForNavigation<MainPage>(Config.MainPage);
+            //containerRegistry.RegisterForNavigation<DependecyPage, OrientationViewModel>();
         }
     }
 }
