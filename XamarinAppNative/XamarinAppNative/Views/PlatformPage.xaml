@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="XamarinAppNative.PlatformPage"
+    xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+    Title="Platform Specific" >
+    <ScrollView>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="150"/>
+    
+            </Grid.RowDefinitions>
+
+                <Label Text="VisualElement Elevation" FontAttributes="Bold" FontSize="Large"/>
+                <Button Text="Button Beneath BoxView" Grid.Row="1" />
+                <BoxView Color="Yellow" Opacity="0.2" HeightRequest="50" Grid.Row="1" />
+
+                <Button Text="Button Above BoxView - Click Me" android:VisualElement.Elevation="10" Grid.Row="2"/>
+                <BoxView Color="Yellow" Opacity="0.2" HeightRequest="50" Grid.Row="2" />
+                <Label Text="Button Shadow" FontAttributes="Bold" FontSize="Large" Grid.Row="3" VerticalOptions="EndAndExpand"/>
+
+                <ImageButton Source="Xamarin.png" Grid.Row="4"
+                                BackgroundColor="GhostWhite"
+                                android:ImageButton.IsShadowEnabled="true"
+                                android:ImageButton.ShadowColor="Gray"
+                                android:ImageButton.ShadowRadius="12"
+                             VerticalOptions="EndAndExpand">
+                    <android:ImageButton.ShadowOffset>
+                        <Size>
+                            <x:Arguments>
+                                <x:Double>10</x:Double>
+                                <x:Double>10</x:Double>
+                            </x:Arguments>
+                        </Size>
+                    </android:ImageButton.ShadowOffset>
+                </ImageButton>
+        </Grid>
+        </ScrollView>
+</ContentPage>
