@@ -16,13 +16,13 @@ namespace XamarinAppNative
         protected override void OnInitialized()
         {
             InitializeComponent();
-            NavigationService.NavigateAsync($"{Config.NavigationPage}/{Config.TabbedPage}");
+            NavigationService.NavigateAsync($"{Config.HomePage}");
         }
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
             containerRegistry.RegisterForNavigation<NavigationPage>(Config.NavigationPage);
-            containerRegistry.RegisterForNavigation<MyTabbedPage>(Config.TabbedPage);
-            containerRegistry.RegisterForNavigation<CustomRenderedPage>(Config.CustomRendered);
+            //containerRegistry.RegisterForNavigation<MyTabbedPage>(Config.TabbedPage);
+            containerRegistry.RegisterForNavigation<HomePage,HomeViewModel>(Config.HomePage);
             containerRegistry.RegisterForNavigation<DevicePage>(Config.DevicePage);
             containerRegistry.RegisterForNavigation<FocusPage>(Config.FocusPage);
             containerRegistry.RegisterForNavigation<PlatformPage>(Config.PlatformPage);

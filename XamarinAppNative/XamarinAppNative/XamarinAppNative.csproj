@@ -16,11 +16,12 @@
     <PackageReference Include="Prism.Unity.Forms" Version="8.0.0.1909" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="ViewModel\" />
+    <Folder Include="ViewModels\" />
     <Folder Include="Views\" />
     <Folder Include="Services\" />
-    <Folder Include="Rendered\" />
+    <Folder Include="Controls\" />
     <Folder Include="Effects\" />
+    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Update="Views\PlatformPage.xaml.cs">

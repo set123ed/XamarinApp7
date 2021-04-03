@@ -11,6 +11,7 @@ namespace XamarinAppNative
         public const string CustomRendered = "Custom";
         public const string PlatformPage = "Plat";
         public const string FocusPage = "Focus";
+        public const string HomePage = "Home";
 
     }
 }

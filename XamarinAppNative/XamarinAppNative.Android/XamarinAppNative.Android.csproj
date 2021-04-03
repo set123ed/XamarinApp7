@@ -63,7 +63,7 @@
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="CustomRendered\MyEntryRenderer.cs" />
+    <Compile Include="Renderers\MyEntryRenderer.cs" />
     <Compile Include="Effects\FocusEffect.cs" />
     <Compile Include="Services\DeviceOrientationService.cs" />
   </ItemGroup>
@@ -94,7 +94,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
-    <Folder Include="CustomRendered\" />
+    <Folder Include="Renderers\" />
     <Folder Include="Effects\" />
     <Folder Include="Services\" />
   </ItemGroup>
